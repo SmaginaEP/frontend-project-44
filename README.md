@@ -5,6 +5,6 @@
 
 
 Installation + brain-even test:
-https://asciinema.org/a/4gXLh0k1PDZBvebSkJU4VTT6a
+<a href="https://asciinema.org/a/4gXLh0k1PDZBvebSkJU4VTT6a" target="_blank">https://asciinema.org/a/4gXLh0k1PDZBvebSkJU4VTT6a</a>
 
 [![asciicast](https://asciinema.org/a/4gXLh0k1PDZBvebSkJU4VTT6a.svg)](https://asciinema.org/a/4gXLh0k1PDZBvebSkJU4VTT6a)
