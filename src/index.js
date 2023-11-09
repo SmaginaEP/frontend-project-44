@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import getRandomInt from '../getRandomInt.js';
 
 const acquaintance = () => {
   console.log('Welcome to the Brain Games!');
@@ -14,7 +15,6 @@ const isAnswerCorrect = () => {
   let answerCount = 0;
 
   while (answerCount <= 2) {
-    const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min) + min);
     const randomInt = getRandomInt(0, 500);
     const isEven = (randomInt % 2 === 0) ? 'yes' : 'no';
 
