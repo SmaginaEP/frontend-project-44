@@ -5,28 +5,20 @@
 
 
 Installation + brain-even test:
-https://asciinema.org/a/4gXLh0k1PDZBvebSkJU4VTT6a
-
 <a href="https://asciinema.org/a/4gXLh0k1PDZBvebSkJU4VTT6a" target="_blank"><img src="https://asciinema.org/a/4gXLh0k1PDZBvebSkJU4VTT6a.svg" /></a>
-
-[![asciicast](https://asciinema.org/a/4gXLh0k1PDZBvebSkJU4VTT6a.svg)](https://asciinema.org/a/4gXLh0k1PDZBvebSkJU4VTT6a)
 
 
 Installation + brain-calc test:
-https://asciinema.org/a/xIGh64sW30cKeq7Cm3kvGjkRn
-<script async id="asciicast-xIGh64sW30cKeq7Cm3kvGjkRn" src="https://asciinema.org/a/xIGh64sW30cKeq7Cm3kvGjkRn.js"></script>
+<a href="https://asciinema.org/a/xIGh64sW30cKeq7Cm3kvGjkRn" target="_blank"><img src="https://asciinema.org/a/xIGh64sW30cKeq7Cm3kvGjkRn.svg" /></a>
 
 
 Installation + brain-gcd test:
-https://asciinema.org/a/gW3W38bUNi1YOPoWM6QGdmGKT
-<script async id="asciicast-gW3W38bUNi1YOPoWM6QGdmGKT" src="https://asciinema.org/a/gW3W38bUNi1YOPoWM6QGdmGKT.js"></script>
+<a href="https://asciinema.org/a/gW3W38bUNi1YOPoWM6QGdmGKT" target="_blank"><img src="https://asciinema.org/a/gW3W38bUNi1YOPoWM6QGdmGKT.svg" /></a>
 
 
 Installation + brain-progression test:
-https://asciinema.org/a/45bvLMJziTHunWJkqunv2BvPR
-<script async id="asciicast-45bvLMJziTHunWJkqunv2BvPR" src="https://asciinema.org/a/45bvLMJziTHunWJkqunv2BvPR.js"></script>
+<a href="https://asciinema.org/a/45bvLMJziTHunWJkqunv2BvPR" target="_blank"><img src="https://asciinema.org/a/45bvLMJziTHunWJkqunv2BvPR.svg" /></a>
 
 
 Installation + brain-prime test:
-https://asciinema.org/a/m9jXrN2uksW2JJ8ae3fdojT7c
-<script async id="asciicast-m9jXrN2uksW2JJ8ae3fdojT7c" src="https://asciinema.org/a/m9jXrN2uksW2JJ8ae3fdojT7c.js"></script>
+<a href="https://asciinema.org/a/m9jXrN2uksW2JJ8ae3fdojT7c" target="_blank"><img src="https://asciinema.org/a/m9jXrN2uksW2JJ8ae3fdojT7c.svg" /></a>
