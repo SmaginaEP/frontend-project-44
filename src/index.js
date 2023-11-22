@@ -1,5 +1,4 @@
 import readlineSync from 'readline-sync';
-import getRandomInt from '../getRandomInt.js';
 
 const acquaintance = () => {
   console.log('Welcome to the Brain Games!');
@@ -7,27 +6,27 @@ const acquaintance = () => {
   console.log(`Hello, ${name}!`);
   return name;
 };
-const name = acquaintance();
 
-const isAnswerCorrect = () => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+const playGame = (rules, func) => {
+  const name = acquaintance();
+  console.log(`${rules}`);
 
   let answerCount = 0;
 
   while (answerCount <= 2) {
-    const randomInt = getRandomInt(0, 500);
-    const isEven = (randomInt % 2 === 0) ? 'yes' : 'no';
-
-    console.log(`Question: ${randomInt}`);
+    const result = func();
+    const rightAnswer = result[0];
+    const question = result[1];
+    console.log(`Question: ${question}`);
 
     const answer = readlineSync.question('Your answer: ');
 
-    if (isEven === answer) {
+    if (rightAnswer === answer) {
       console.log('Correct!');
       answerCount += 1;
       continue;
     } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isEven}'.
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.
             Let's try again, ${name}!`);
       return;
     }
@@ -35,4 +34,5 @@ const isAnswerCorrect = () => {
 
   console.log(`Congratulations, ${name}!`);
 };
-export default isAnswerCorrect;
+
+export default playGame;
