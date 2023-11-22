@@ -13,7 +13,6 @@ const isPrime = () => {
     }
     rightAnswer = 'yes';
   }
-  console.log(rightAnswer);
   const question = `${randomInt}`;
   return [rightAnswer, question];
 };
