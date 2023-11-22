@@ -10,3 +10,7 @@ https://asciinema.org/a/4gXLh0k1PDZBvebSkJU4VTT6a
 
 Installation + brain-calc test:
 https://asciinema.org/a/xIGh64sW30cKeq7Cm3kvGjkRn
+
+
+Installation + brain-gcd test:
+https://asciinema.org/a/gW3W38bUNi1YOPoWM6QGdmGKT
