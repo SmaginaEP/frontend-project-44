@@ -6,7 +6,8 @@
 
 Installation + brain-even test:
 https://asciinema.org/a/4gXLh0k1PDZBvebSkJU4VTT6a
-<script async id="asciicast-4gXLh0k1PDZBvebSkJU4VTT6a" src="https://asciinema.org/a/4gXLh0k1PDZBvebSkJU4VTT6a.js"></script>
+
+[![asciicast](https://asciinema.org/a/4gXLh0k1PDZBvebSkJU4VTT6a.svg)](https://asciinema.org/a/4gXLh0k1PDZBvebSkJU4VTT6a)
 
 
 Installation + brain-calc test:
