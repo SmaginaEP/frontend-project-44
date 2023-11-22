@@ -6,14 +6,24 @@
 
 Installation + brain-even test:
 https://asciinema.org/a/4gXLh0k1PDZBvebSkJU4VTT6a
+<script async id="asciicast-4gXLh0k1PDZBvebSkJU4VTT6a" src="https://asciinema.org/a/4gXLh0k1PDZBvebSkJU4VTT6a.js"></script>
 
 
 Installation + brain-calc test:
 https://asciinema.org/a/xIGh64sW30cKeq7Cm3kvGjkRn
+<script async id="asciicast-xIGh64sW30cKeq7Cm3kvGjkRn" src="https://asciinema.org/a/xIGh64sW30cKeq7Cm3kvGjkRn.js"></script>
 
 
 Installation + brain-gcd test:
 https://asciinema.org/a/gW3W38bUNi1YOPoWM6QGdmGKT
+<script async id="asciicast-gW3W38bUNi1YOPoWM6QGdmGKT" src="https://asciinema.org/a/gW3W38bUNi1YOPoWM6QGdmGKT.js"></script>
+
 
 Installation + brain-progression test:
 https://asciinema.org/a/45bvLMJziTHunWJkqunv2BvPR
+<script async id="asciicast-45bvLMJziTHunWJkqunv2BvPR" src="https://asciinema.org/a/45bvLMJziTHunWJkqunv2BvPR.js"></script>
+
+
+Installation + brain-prime test:
+https://asciinema.org/a/m9jXrN2uksW2JJ8ae3fdojT7c
+<script async id="asciicast-m9jXrN2uksW2JJ8ae3fdojT7c" src="https://asciinema.org/a/m9jXrN2uksW2JJ8ae3fdojT7c.js"></script>
