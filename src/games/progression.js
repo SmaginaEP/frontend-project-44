@@ -11,9 +11,6 @@ const progression = () => {
   const randomIndex = getRandomInt(0, `${arrayLenght}`);
   const result = firstNumber + (difference * (randomIndex));
 
-  console.log(firstNumber);
-  console.log(difference);
-  console.log(randomIndex);
   let number = firstNumber;
   for (let i = 0; i < arrayLenght; i += 1) {
     ArrayOfProgression.push(number);
