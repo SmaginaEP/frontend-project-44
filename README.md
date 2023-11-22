@@ -14,3 +14,6 @@ https://asciinema.org/a/xIGh64sW30cKeq7Cm3kvGjkRn
 
 Installation + brain-gcd test:
 https://asciinema.org/a/gW3W38bUNi1YOPoWM6QGdmGKT
+
+Installation + brain-progression test:
+https://asciinema.org/a/45bvLMJziTHunWJkqunv2BvPR
