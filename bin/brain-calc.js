@@ -1,3 +1,4 @@
 #!/usr/bin/env node
-import isAnswerCorrect from '../src/games/isEven.js';
-isAnswerCorrect();
+import calc from '../src/games/calc.js';
+
+calc();
