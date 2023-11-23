@@ -5,7 +5,7 @@ const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = () => {
   const randomInt = getRandomInt(2, 20);
-  let rightAnswer = '';
+  let rightAnswer;
   for (let i = 2; i < randomInt; i++) {
     if (randomInt % i === 0) {
       rightAnswer = 'no';
