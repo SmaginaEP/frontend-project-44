@@ -6,9 +6,9 @@ const rules = 'What number is missing in the progression?';
 const progression = () => {
   const firstNumber = getRandomInt(0, 100);
   const difference = getRandomInt(1, 10);
-  const arrayLenght = getRandomInt(5, 10);
+  const arrayLenght = getRandomInt(6, 10);
   const ArrayOfProgression = [];
-  const randomIndex = getRandomInt(0, `${arrayLenght}`);
+  const randomIndex = getRandomInt(1, `${arrayLenght}`);
   const result = firstNumber + (difference * (randomIndex));
 
   let number = firstNumber;
@@ -19,7 +19,7 @@ const progression = () => {
   ArrayOfProgression[randomIndex] = '..';
 
   const rightAnswer = `${result}`;
-  const question = `${ArrayOfProgression}`;
+  const question = `${ArrayOfProgression.join(' ')}`;
   return [rightAnswer, question];
 };
 export default () => {
