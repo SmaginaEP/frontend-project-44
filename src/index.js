@@ -24,7 +24,6 @@ const playGame = (rules, func) => {
     if (rightAnswer === answer) {
       console.log('Correct!');
       answerCount += 1;
-      continue;
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.
             Let's try again, ${name}!`);
