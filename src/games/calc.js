@@ -1,33 +1,35 @@
-import getRandomInt from '../getRandomInt.js';
+import getRandomInt from '../helpers.js';
 import playGame from '../index.js';
 
 const rules = 'What is the result of the expression?';
 
-const calc = () => {
-  const randomInt1 = getRandomInt(0, 100);
-  const randomInt2 = getRandomInt(0, 100);
-
-  const ArrayOfSign = ['+', '-', '*'];
-  const randomIndex = Math.floor(Math.random() * (ArrayOfSign.length - 1));
-  const randomSign = ArrayOfSign[randomIndex];
+const getCalcResult = (number1, number2, sign) => {
   let result;
-
-  switch (randomSign) {
+  switch (sign) {
     case '-':
-      result = randomInt1 - randomInt2;
+      result = number1 - number2;
       break;
     case '+':
-      result = randomInt1 + randomInt2;
+      result = number1 + number2;
       break;
     case '*':
-      result = randomInt1 * randomInt2;
+      result = number1 * number2;
       break;
     default:
       console.log('нет нужного знака');
   }
+  return result;
+};
 
-  const rightAnswer = `${result}`;
-  const question = `${randomInt1} ${randomSign} ${randomInt2}`;
+const calc = () => {
+  const randomNumber1 = getRandomInt(0, 100);
+  const randomNumber2 = getRandomInt(0, 100);
+  const operators = ['+', '-', '*'];
+  const randomIndex = getRandomInt(0, `${operators.length - 1}`);
+  const randomSign = operators[randomIndex];
+  const result = getCalcResult(randomNumber1, randomNumber2, randomSign);
+  const rightAnswer = String(result);
+  const question = `${randomNumber1} ${randomSign} ${randomNumber2}`;
   return [rightAnswer, question];
 };
 export default () => {

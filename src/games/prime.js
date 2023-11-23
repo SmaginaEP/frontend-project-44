@@ -1,21 +1,24 @@
-import getRandomInt from '../getRandomInt.js';
+import getRandomInt from '../helpers.js';
 import playGame from '../index.js';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-
-const isPrime = () => {
-  const randomInt = getRandomInt(2, 500);
-  let rightAnswer = 'yes';
-  for (let i = 2; i < randomInt; i += 1) {
-    if (randomInt % i === 0) {
-      rightAnswer = 'no';
-      break;
+const isPrime = (rNumber) => {
+  for (let i = 2; i < rNumber; i += 1) {
+    if (rNumber % i === 0) {
+      return false;
     }
   }
-  const question = `${randomInt}`;
+  return true;
+};
+
+const checkPrime = () => {
+  const randomNumber = getRandomInt(2, 500);
+  const resPrime = isPrime(randomNumber);
+  const rightAnswer = resPrime ? 'yes' : 'no';
+  const question = `${randomNumber}`;
   return [rightAnswer, question];
 };
 
 export default () => {
-  playGame(rules, isPrime);
+  playGame(rules, checkPrime);
 };
