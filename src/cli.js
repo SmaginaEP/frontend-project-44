@@ -1,10 +1,10 @@
 import readlineSync from 'readline-sync';
 
-const acquaintance = () => {
+const getAcquaintance = () => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
   return name;
 };
 
-export default acquaintance;
+export default getAcquaintance;

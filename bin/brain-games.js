@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import acquaintance from '../src/cli.js';
+import runAcquaintance from '../src/cli.js';
 
-acquaintance();
+runAcquaintance();

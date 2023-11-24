@@ -1,37 +1,32 @@
-import getRandomInt from '../helpers.js';
+import getRandNumber from '../helpers.js';
 import playGame from '../index.js';
 
 const rules = 'What is the result of the expression?';
 
-const getCalcResult = (number1, number2, sign) => {
-  let result;
+const calculate = (number1, number2, sign) => {
   switch (sign) {
     case '-':
-      result = number1 - number2;
-      break;
+      return number1 - number2;
     case '+':
-      result = number1 + number2;
-      break;
+      return number1 + number2;
     case '*':
-      result = number1 * number2;
-      break;
+      return number1 * number2;
     default:
-      console.log('нет нужного знака');
+      throw new Error('Нет нужного оператора!');
   }
-  return result;
 };
 
-const calc = () => {
-  const randomNumber1 = getRandomInt(0, 100);
-  const randomNumber2 = getRandomInt(0, 100);
+const checkCalculation = () => {
+  const number1 = getRandNumber(0, 100);
+  const number2 = getRandNumber(0, 100);
   const operators = ['+', '-', '*'];
-  const randomIndex = getRandomInt(0, `${operators.length - 1}`);
-  const randomSign = operators[randomIndex];
-  const result = getCalcResult(randomNumber1, randomNumber2, randomSign);
-  const rightAnswer = String(result);
-  const question = `${randomNumber1} ${randomSign} ${randomNumber2}`;
-  return [rightAnswer, question];
+  const randomIndex = getRandNumber(0, `${operators.length - 1}`);
+  const operator = operators[randomIndex];
+  const result = calculate(number1, number2, operator);
+  const answer = String(result);
+  const question = `${number1} ${operator} ${number2}`;
+  return [answer, question];
 };
 export default () => {
-  playGame(rules, calc);
+  playGame(rules, checkCalculation);
 };

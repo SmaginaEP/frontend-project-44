@@ -1,4 +1,4 @@
-import getRandomInt from '../helpers.js';
+import getRandNumber from '../helpers.js';
 import playGame from '../index.js';
 
 const rules = 'What number is missing in the progression?';
@@ -11,20 +11,20 @@ const generateProgression = (start, step, length) => {
   return arrayProgression;
 };
 
-const progression = () => {
-  const firstNumber = getRandomInt(0, 100);
-  const difference = getRandomInt(1, 10);
-  const arrayLenght = getRandomInt(6, 10);
-  const randomIndex = getRandomInt(1, `${arrayLenght}`);
-  const result = firstNumber + (difference * (randomIndex));
+const checkProgression = () => {
+  const firstNumber = getRandNumber(0, 100);
+  const difference = getRandNumber(1, 10);
+  const arrayLenght = getRandNumber(6, 10);
+  const index = getRandNumber(1, arrayLenght);
 
-  const arrayOfProgression = generateProgression(firstNumber, difference, arrayLenght);
-  arrayOfProgression[randomIndex] = '..';
+  const progression = generateProgression(firstNumber, difference, arrayLenght);
+  const result = `${progression[index]}`;
+  progression[index] = '..';
 
-  const rightAnswer = `${result}`;
-  const question = `${arrayOfProgression.join(' ')}`;
-  return [rightAnswer, question];
+  const answer = result;
+  const question = progression.join(' ');
+  return [answer, question];
 };
 export default () => {
-  playGame(rules, progression);
+  playGame(rules, checkProgression);
 };
