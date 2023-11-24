@@ -1,4 +1,4 @@
-import getRandNumber from '../helpers.js';
+import getRandomNumber from '../helpers.js';
 import playGame from '../index.js';
 
 const rules = 'Find the greatest common divisor of given numbers.';
@@ -9,13 +9,13 @@ const getNOD = (number1, number2) => {
   return getNOD(number2, number1 % number2);
 };
 
-const checkGcd = () => {
-  const number1 = getRandNumber(1, 100);
-  const number2 = getRandNumber(1, 100);
-  const answer = `${getNOD(number1, number2)}`;
+const createRound = () => {
+  const number1 = getRandomNumber(1, 100);
+  const number2 = getRandomNumber(1, 100);
+  const answer = String(getNOD(number1, number2));
   const question = `${number1} ${number2}`;
   return [answer, question];
 };
 export default () => {
-  playGame(rules, checkGcd);
+  playGame(rules, createRound);
 };

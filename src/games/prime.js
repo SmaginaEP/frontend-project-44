@@ -1,4 +1,4 @@
-import getRandNumber from '../helpers.js';
+import getRandomNumber from '../helpers.js';
 import playGame from '../index.js';
 
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -11,14 +11,12 @@ const isPrime = (rNumber) => {
   return true;
 };
 
-const checkPrime = () => {
-  const number = getRandNumber(2, 500);
-  const resPrime = isPrime(number);
-  const answer = resPrime ? 'yes' : 'no';
-  const question = number;
+const createRound = () => {
+  const question = getRandomNumber(2, 500);
+  const answer = isPrime(question) ? 'yes' : 'no';
   return [answer, question];
 };
 
 export default () => {
-  playGame(rules, checkPrime);
+  playGame(rules, createRound);
 };

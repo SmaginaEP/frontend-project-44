@@ -1,10 +1,10 @@
-import getRandNumber from '../helpers.js';
+import getRandomNumber from '../helpers.js';
 import playGame from '../index.js';
 
 const rules = 'What is the result of the expression?';
 
-const calculate = (number1, number2, sign) => {
-  switch (sign) {
+const calculate = (number1, number2, operator) => {
+  switch (operator) {
     case '-':
       return number1 - number2;
     case '+':
@@ -12,15 +12,15 @@ const calculate = (number1, number2, sign) => {
     case '*':
       return number1 * number2;
     default:
-      throw new Error('Нет нужного оператора!');
+      throw new Error(`Оperator ${operator} unsupported!`);
   }
 };
 
-const checkCalculation = () => {
-  const number1 = getRandNumber(0, 100);
-  const number2 = getRandNumber(0, 100);
+const createRound = () => {
+  const number1 = getRandomNumber(0, 100);
+  const number2 = getRandomNumber(0, 100);
   const operators = ['+', '-', '*'];
-  const randomIndex = getRandNumber(0, `${operators.length - 1}`);
+  const randomIndex = getRandomNumber(0, `${operators.length - 1}`);
   const operator = operators[randomIndex];
   const result = calculate(number1, number2, operator);
   const answer = String(result);
@@ -28,5 +28,5 @@ const checkCalculation = () => {
   return [answer, question];
 };
 export default () => {
-  playGame(rules, checkCalculation);
+  playGame(rules, createRound);
 };
