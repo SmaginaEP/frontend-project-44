@@ -1,7 +1,7 @@
 import getRandomNumber from '../helpers.js';
 import playGame from '../index.js';
 
-const rules = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const generateProgression = (start, step, length) => {
   const arrayProgression = [];
@@ -25,5 +25,5 @@ const createRound = () => {
   return [answer, question];
 };
 export default () => {
-  playGame(rules, createRound);
+  playGame(description, createRound);
 };

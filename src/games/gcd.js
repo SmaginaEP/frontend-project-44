@@ -1,7 +1,7 @@
 import getRandomNumber from '../helpers.js';
 import playGame from '../index.js';
 
-const rules = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const getNOD = (number1, number2) => {
   if (number2 > number1) { return getNOD(number2, number1); }
@@ -17,5 +17,5 @@ const createRound = () => {
   return [answer, question];
 };
 export default () => {
-  playGame(rules, createRound);
+  playGame(description, createRound);
 };
